@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="7dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0AA5EC">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/headingEMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="EMI Calculator"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtLA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bgHeader"
+        android:layout_marginTop="22dp"
+        android:text="Loan Amount  "
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/txtInterest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLA"
+        android:layout_marginTop="33dp"
+        android:text="Interest"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/txtPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInterest"
+        android:layout_marginTop="31dp"
+        android:text="Period"
+        android:textSize="20sp"></TextView>
+
+
+
+    <EditText
+        android:id="@+id/edtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/bgHeader"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="5dp"
+        android:background="#78919E"
+        android:hint="Enter Loan Amount"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textColor="#24383A"
+        android:textColorHint="#495756">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtInterest"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtAmount"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="5dp"
+        android:background="#78919E"
+        android:hint="Enter Interest"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textColor="#24383A"
+        android:textColorHint="#495756">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtPeriodYear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtInterest"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="10dp"
+        android:background="#78919E"
+        android:hint="Year"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="#24383A"
+        android:textColorHint="#495756">
+
+    </EditText>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPeriodYear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:text="Calculate">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_toEndOf="@id/btnCalculate"
+            android:text="Reset">
+
+        </Button>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
